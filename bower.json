@@ -19,7 +19,10 @@
     "jquery": "~2.1.4",
     "underscore": "~1.8.3",
     "normalize.css": "~3.0.3",
-    "angular": "~1.4.1"
+    "angular": "~1.4.1",
+    "bourbon": "~4.2.3",
+    "neat": "~1.7.2",
+    "angular-ui-router": "~0.2.15"
   },
   "devDependencies": {
     "mocha": "~2.2.5",
