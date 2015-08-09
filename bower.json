@@ -23,7 +23,8 @@
     "bourbon": "~4.2.3",
     "neat": "~1.7.2",
     "angular-ui-router": "~0.2.15",
-    "font-awesome": "~4.4.0"
+    "font-awesome": "~4.4.0",
+    "skrollr": "~0.6.30"
   },
   "devDependencies": {
     "mocha": "~2.2.5",

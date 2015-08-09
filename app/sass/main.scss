@@ -16,6 +16,10 @@ body {
   font-family: 'Work Sans', sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 //====================================
 //Section 1 - Header
 //====================================
@@ -24,12 +28,17 @@ body {
 // Main Picture
 
 .mainPicture {
-  background-image: url(../images/fish3.jpg);
+  // background-image: url(../images/fish3.jpg);
   background-color: black;
   width: 100%;
   height: 100vh;
   background-size: cover;
   background-position: right 50px top -50px;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 
@@ -78,6 +87,7 @@ body {
   overflow: hidden;
   position: relative;
   cursor: pointer;
+  z-index: 100;
 }
 
 .textLayer {
@@ -120,8 +130,6 @@ body {
   top: 25px;
   left: 30px;
 }
-
-
 
 #skillNav .colorLayer {
     height: 100px;
@@ -172,4 +180,186 @@ body {
   color: RGBA(255, 180, 33, 1)
 }
 
+//==================================================
+// Skills Section
+//==================================================
+
+
+.skillsSection {
+  @include span-columns(12);
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/falloutmonitor.jpg);
+  background-size: cover;
+  display: block;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 100vh;
+}
+
+.skillContainer {
+  position: relative;
+}
+
+.iconPanel {
+  position: absolute;
+  top: 68px;
+  left: 280px;
+}
+
+.iconDisplay {
+  position: relative;
+}
+
+.skillDesc {
+  position: absolute;
+  top: 68px;
+  left: 280px;
+  background-color: RGBA(14, 22, 17, 1);
+  border-radius: 30px;
+  width: 740px;
+  height: 520px;
+}
+
+.skillDesc span {
+  position: absolute;
+  top: 60%;
+  left: 50px;
+  color: RGBA(115, 182, 146, 1);
+  font-family: 'Monda', sans-serif;
+}
+
+.skillDesc p {
+  position: absolute;
+  top: 70%;
+  left: 50px;
+  color: RGBA(115, 182, 146, 1);
+  font-family: 'Monda', sans-serif;
+}
+
+.skill {
+  height: 60px;
+  width: 60px;
+  z-index: 3;
+  position: absolute;
+  border-radius: 5px;
+}
+
+.javascript {
+  top: 30px;
+  left: 30px;
+}
+
+.angular {
+  top: 30px;
+  left: 120px;
+}
+
+.backbone {
+  top: 30px;
+  left: 210px;
+}
+
+.ajax {
+  top: 30px;
+  left: 300px;
+}
+
+.css {
+  top: 120px;
+  left: 30px;
+}
+
+.sass {
+  top: 120px;
+  left: 120px;
+}
+
+.foundation {
+  top: 120px;
+  left: 210px;
+}
+
+.bourbon {
+  top: 120px;
+  left: 300px;
+}
+
+.html {
+  top: 210px;
+  left: 30px;
+}
+
+.github {
+  top: 210px;
+  left: 120px;
+}
+
+//==================================================
+// Portfolio Section
+//==================================================
+
+.portfolioSection {
+  background-color: RGBA(193, 218, 214, 1);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 200vh;
+  left: 0;
+  z-index: 2;
+}
+
+.portfolioSection p {
+  color: RGBA(110, 146, 155, 1);
+  font-size: 30px;
+}
+
+.portContainer {
+  @include outer-container;
+}
+
+.project {
+  @include span-columns(4);
+  background-color: RGBA(245, 250, 250, 1);
+  border-radius: 10px;
+  height: 200px;
+}
+
+//==================================================
+// About Section
+//==================================================
+
+.aboutSection {
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 300vh;
+  left: 0;
+  z-index: 2;
+}
+
+.aboutSection p {
+  color: white;
+}
+
+//==================================================
+// Contact Section
+//==================================================
+
+.contactSection {
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 400vh;
+  left: 0;
+  z-index: 2;
+}
+
+.contactSection p {
+  color: white;
+  font-size: 30px;
+}
 
