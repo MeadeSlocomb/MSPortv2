@@ -8,80 +8,39 @@
 
     function ($scope, $location) {
 
-      $scope.javascript = {
-        title: 'javascript',
-        path: 'javascript',
-        desc: 'JavaScript is my favorite language',
-        github: 'https://github.com/Code-Bytes'
+      $scope.js = false;
+      $scope.css = false;
+
+      $scope.expandedJS = function(){
+        if ($scope.js === false) {
+          $scope.js = true;
+          } else {
+            $scope.js = false;
+          }
       };
 
-      $scope.angular = {
-        title: 'angular',
-        path: 'javascript/angular',
-        desc: 'JavaScript is my favorite language',
-        github: 'https://github.com/Code-Bytes'
+      $scope.expandedCSS = function(){
+        if ($scope.css === false) {
+          $scope.css = true;
+          } else {
+            $scope.css = false;
+          }
       };
 
-      $scope.backbone = {
-        title: 'backbone',
-        path: 'javascript/backbone',
-        desc: 'JavaScript is my favorite language',
-        github: 'https://github.com/Code-Bytes'
+      $scope.getJSClass = function(path){
+        if ($scope.js === false) {
+          return "";
+          } else {
+            return "expanded";
+          }
       };
 
-      $scope.ajax = {
-        title: 'AJAX',
-        path: 'javascript/ajax',
-        desc: 'JavaScript is my favorite language',
-        github: 'https://github.com/Code-Bytes'
-      };
-
-      $scope.css = {
-        title: 'CSS3',
-        path: 'css/css3',
-        desc: 'JavaScript is my favorite language',
-        github: 'https://github.com/Code-Bytes'
-      };
-
-      $scope.sass = {
-        title: 'Sass',
-        path: 'css/sass',
-        desc: 'JavaScript is my favorite language',
-        github: 'https://github.com/Code-Bytes'
-      };
-
-      $scope.foundation = {
-        title: 'foundation',
-        path: 'css/foundation',
-        desc: 'JavaScript is my favorite language',
-        github: 'https://github.com/Code-Bytes'
-      };
-
-      $scope.bourbon = {
-        title: 'bourbon',
-        path: 'css/bourbon',
-        desc: 'JavaScript is my favorite language',
-        github: 'https://github.com/Code-Bytes'
-      };
-
-      $scope.html = {
-        title: 'HTML5',
-        path: 'markup/html5',
-        desc: 'JavaScript is my favorite language',
-        github: 'https://github.com/Code-Bytes'
-      };
-
-      $scope.github = {
-        title: 'github',
-        path: 'versioncontrol/github',
-        desc: 'JavaScript is my favorite language',
-        github: 'https://github.com/Code-Bytes'
-      };
-
-      $scope.displayedLang = $scope.javascript;
-
-      $scope.changeLang = function(lang){
-        $scope.displayedLang = lang;
+      $scope.getCSSClass = function(path){
+        if ($scope.css === false) {
+          return "";
+          } else {
+            return "expanded";
+          }
       };
 
 

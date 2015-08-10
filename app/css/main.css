@@ -143,27 +143,84 @@ body {
 .tag2 {
   color: RGBA(255, 180, 33, 1); }
 
-.portfolioSection p {
-  color: RGBA(110, 146, 155, 1);
-  font-size: 30px; }
+.skillsSection {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 57.35098%;
+  margin-left: 25.58941%;
+  margin-top: 150px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  border-left: 3px solid RGBA(101, 213, 240, 1);
+  border-radius: 10px; }
+  .skillsSection:last-child {
+    margin-right: 0; }
 
-.portContainer {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto; }
-  .portContainer::after {
-    clear: both;
-    content: "";
-    display: table; }
+.skillDesc span {
+  color: white;
+  font-family: 'Monda', sans-serif; }
+
+.skillDesc p {
+  color: white;
+  font-family: 'Monda', sans-serif; }
+
+.skill {
+  height: 100px;
+  width: 100px;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 0;
+  display: inline;
+  float: left; }
+
+.accordion {
+  width: 110px;
+  height: 110px;
+  overflow: hidden; }
+
+.css {
+  background-color: white;
+  padding: 2px; }
+
+.ajax {
+  background-color: white;
+  padding: 2px; }
+
+.resumeLink {
+  text-decoration: none;
+  color: RGBA(101, 213, 240, 1); }
+
+.expanded {
+  width: 100%;
+  transition: width 1s ease; }
+
+.portfolioSection {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  margin-left: 17.05961%;
+  margin-top: 150px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  border-left: 3px solid RGBA(177, 30, 73, 1);
+  border-radius: 10px; }
+  .portfolioSection:last-child {
+    margin-right: 0; }
+
+.portfolioSection p {
+  color: black;
+  font-size: 30px; }
 
 .project {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 31.76157%;
-  background-color: RGBA(245, 250, 250, 1);
+  background-color: white;
   border-radius: 10px;
-  height: 425px;
+  height: 500px;
   text-align: center;
   border: RGBA(110, 146, 155, 1) 2px solid; }
   .project:last-child {
@@ -173,7 +230,7 @@ body {
   width: 150px;
   height: 150px;
   border-radius: 100%;
-  border: RGBA(110, 146, 155, 1) 2px solid;
+  border: black 2px solid;
   overflow: hidden;
   margin: 20px auto 5px auto; }
 
@@ -185,7 +242,7 @@ body {
   text-decoration: none; }
 
 .projTitle a span {
-  color: RGBA(110, 146, 155, 1);
+  color: black;
   font-size: 30px; }
 
 .projTagline span {
@@ -194,30 +251,27 @@ body {
 .projDesc p {
   font-size: 14px; }
 
-.aboutSection p {
-  color: white; }
-
 .aboutDiv {
-  background-color: RGBA(253, 250, 250, 1);
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 65.88078%;
-  margin-left: 17.05961%;
-  height: 70%;
-  border: RGBA(74, 54, 39, 1) 2px solid;
-  border-radius: 10px;
-  margin-top: 20px; }
+  width: 48.82117%;
+  margin-left: 25.58941%;
+  margin-top: 150px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  border-left: 3px solid RGBA(142, 181, 46, 1);
+  border-radius: 10px; }
   .aboutDiv:last-child {
     margin-right: 0; }
 
 .aboutDiv span {
-  color: RGBA(80, 63, 41, 1);
+  color: white;
   margin-left: 20px;
   font-size: 25px; }
 
 .aboutDiv p {
-  color: RGBA(80, 63, 41, 1);
+  color: white;
   margin: 25px; }
 
 .contactDiv {
@@ -226,7 +280,7 @@ body {
   margin-right: 2.35765%;
   width: 48.82117%;
   margin-left: 25.58941%;
-  margin-top: 120px;
+  margin-top: 150px;
   padding-left: 30px;
   padding-bottom: 30px;
   border-left: 3px solid RGBA(0, 183, 150, 1);
@@ -246,7 +300,9 @@ body {
   font-size: 30px; }
 
 .contactDiv a {
-  text-decoration: none; }
+  text-decoration: none;
+  display: inline-block;
+  padding: 0; }
 
 .contactDiv a i {
   color: white;
