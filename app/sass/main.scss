@@ -423,7 +423,13 @@ body {
 //==================================================
 
 .contactDiv {
+  @include span-columns(6);
+  @include shift(3);
   margin-top: 120px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  border-left: 3px solid RGBA(0, 183, 150, 1);
+  border-radius: 10px;
 }
 
 .info i {
@@ -448,9 +454,3 @@ body {
   color: white;
   margin: 20px;
 }
-
-.contactDiv {
-  @include span-columns(6);
-  @include shift(3);
-}
-
