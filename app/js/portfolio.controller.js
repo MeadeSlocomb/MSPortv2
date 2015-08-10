@@ -4,9 +4,9 @@
 
   angular.module('MSPortfolio')
 
-  .controller('PortfolioController', ['$scope',
+  .controller('PortfolioController', ['$scope', '$location',
 
-    function ($scope) {
+    function ($scope, $location) {
 
       $scope.javascript = {
         title: 'javascript',

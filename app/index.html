@@ -15,43 +15,44 @@
 
     <div class="mainView">
 
-
+        <a href="/#/">
         <div class="title">
           <span class="firstName">meade</span>
           <span class="lastName">slocomb</span>
-          <span class="jTitle">frontend web developer</span>
+          <span class="jTitle">front end web developer</span>
         </div>
+        </a>
 
 
-        <div class="nav">
-          <a href="/#/skills/">
+        <div class="nav" ng-controller="NavController">
+          <a class="skills" href="/#/skills/">
             <div class="navDiv" id="skillNav">
-              <div class="colorLayer"></div>
-              <div class="textLayer">skills</div>
+              <div ng-class="getCClass('/skills/')" class="colorLayer"></div>
+              <div ng-class="getTClass('/skills/')" class="textLayer">skills</div>
               <i class="fa fa-3x fa-bar-chart"></i>
             </div>
           </a>
 
           <a href="/#/work/">
             <div class="navDiv" id="workNav">
-              <div class="colorLayer"></div>
-              <div class="textLayer">my work</div>
+              <div ng-class="getCClass('/work/')" class="colorLayer"></div>
+              <div ng-class="getTClass('/work/')" class="textLayer">my work</div>
               <i class="fa fa-3x fa-briefcase"></i>
             </div>
           </a>
 
           <a href="/#/about/">
             <div class="navDiv" id="aboutNav">
-              <div class="colorLayer"></div>
-              <div class="textLayer">about me</div>
+              <div ng-class="getCClass('/about/')" class="colorLayer"></div>
+              <div ng-class="getTClass('/about/')" class="textLayer">about me</div>
               <i class="fa fa-3x fa-comment"></i>
             </div>
           </a>
 
           <a href="/#/contact/">
             <div class="navDiv" id="contactNav">
-              <div class="colorLayer"></div>
-              <div class="textLayer">contact</div>
+              <div ng-class="getCClass('/contact/')" class="colorLayer"></div>
+              <div ng-class="getTClass('/contact/')" class="textLayer">contact</div>
               <i class="fa fa-3x fa-phone"></i>
             </div>
           </a>
@@ -74,6 +75,8 @@
   <!-- MAIN -->
   <script src="js/main.js"></script>
   <script src="js/portfolio.controller.js"></script>
+  <script src="js/nav.controller.js"></script>
+
 
 </body>
 </html>

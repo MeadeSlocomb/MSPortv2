@@ -119,6 +119,12 @@ body {
   width: 100px;
   background-color: RGBA(0, 183, 150, 1); }
 
+.activeC {
+  background-color: white !important; }
+
+.activeT {
+  z-index: 10; }
+
 .tagLines {
   position: absolute;
   top: 580px;
@@ -215,7 +221,7 @@ body {
   margin: 25px; }
 
 .contactDiv {
-  margin-top: 100px; }
+  margin-top: 120px; }
 
 .info i {
   color: white;
@@ -239,7 +245,7 @@ body {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 65.88078%;
-  margin-left: 17.05961%; }
+  width: 48.82117%;
+  margin-left: 25.58941%; }
   .contactDiv:last-child {
     margin-right: 0; }
