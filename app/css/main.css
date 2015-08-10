@@ -12,17 +12,16 @@ body {
 * {
   box-sizing: border-box; }
 
-.mainPicture {
+.container {
+  width: 100%;
+  height: 100vh; }
+
+.mainView {
   background-color: black;
+  display: block;
   width: 100%;
   height: 100vh;
-  background-size: cover;
-  background-position: right 50px top -50px;
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1; }
+  z-index: 10; }
 
 .firstName {
   font-size: 30px;
@@ -51,6 +50,10 @@ body {
   width: 100px;
   height: 500px; }
 
+.nav a {
+  text-decoration: none;
+  color: black; }
+
 .navDiv {
   width: 100px;
   height: 100px;
@@ -59,8 +62,7 @@ body {
   margin: 15px;
   overflow: hidden;
   position: relative;
-  cursor: pointer;
-  z-index: 100; }
+  cursor: pointer; }
 
 .textLayer {
   width: 100px;
@@ -135,113 +137,6 @@ body {
 .tag2 {
   color: RGBA(255, 180, 33, 1); }
 
-.skillsSection {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%;
-  width: 100%;
-  height: 100vh;
-  background-image: url(../images/falloutmonitor.jpg);
-  background-size: cover;
-  display: block;
-  z-index: 2;
-  position: absolute;
-  left: 0;
-  top: 100vh; }
-  .skillsSection:last-child {
-    margin-right: 0; }
-
-.skillContainer {
-  position: relative; }
-
-.iconPanel {
-  position: absolute;
-  top: 68px;
-  left: 280px; }
-
-.iconDisplay {
-  position: relative; }
-
-.skillDesc {
-  position: absolute;
-  top: 68px;
-  left: 280px;
-  background-color: RGBA(14, 22, 17, 1);
-  border-radius: 30px;
-  width: 740px;
-  height: 520px; }
-
-.skillDesc span {
-  position: absolute;
-  top: 60%;
-  left: 50px;
-  color: RGBA(115, 182, 146, 1);
-  font-family: 'Monda', sans-serif; }
-
-.skillDesc p {
-  position: absolute;
-  top: 70%;
-  left: 50px;
-  color: RGBA(115, 182, 146, 1);
-  font-family: 'Monda', sans-serif; }
-
-.skill {
-  height: 60px;
-  width: 60px;
-  z-index: 3;
-  position: absolute;
-  border-radius: 5px; }
-
-.javascript {
-  top: 30px;
-  left: 30px; }
-
-.angular {
-  top: 30px;
-  left: 120px; }
-
-.backbone {
-  top: 30px;
-  left: 210px; }
-
-.ajax {
-  top: 30px;
-  left: 300px; }
-
-.css {
-  top: 120px;
-  left: 30px; }
-
-.sass {
-  top: 120px;
-  left: 120px; }
-
-.foundation {
-  top: 120px;
-  left: 210px; }
-
-.bourbon {
-  top: 120px;
-  left: 300px; }
-
-.html {
-  top: 210px;
-  left: 30px; }
-
-.github {
-  top: 210px;
-  left: 120px; }
-
-.portfolioSection {
-  background-color: RGBA(193, 218, 214, 1);
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  top: 200vh;
-  left: 0;
-  z-index: 2; }
-
 .portfolioSection p {
   color: RGBA(110, 146, 155, 1);
   font-size: 30px; }
@@ -293,17 +188,6 @@ body {
 .projDesc p {
   font-size: 14px; }
 
-.aboutSection {
-  background-color: black;
-  background-image: url(../images/moss.jpg);
-  background-size: contain;
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  top: 300vh;
-  left: 0;
-  z-index: 2; }
-
 .aboutSection p {
   color: white; }
 
@@ -329,15 +213,6 @@ body {
 .aboutDiv p {
   color: RGBA(80, 63, 41, 1);
   margin: 25px; }
-
-.contactSection {
-  background-color: black;
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  top: 400vh;
-  left: 0;
-  z-index: 2; }
 
 .contactDiv {
   margin-top: 100px; }
