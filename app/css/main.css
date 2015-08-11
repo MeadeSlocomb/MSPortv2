@@ -179,9 +179,17 @@ body {
   height: 110px;
   overflow: hidden; }
 
+.accordion span {
+  color: white;
+  font-size: 13px; }
+
+.js {
+  cursor: pointer; }
+
 .css {
   background-color: white;
-  padding: 2px; }
+  padding: 2px;
+  cursor: pointer; }
 
 .ajax {
   background-color: white;

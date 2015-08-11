@@ -40,10 +40,6 @@ body {
   z-index: 10;
 }
 
-.view {
-
-}
-
 //Header
 
 .firstName {
@@ -239,9 +235,19 @@ body {
   overflow: hidden;
 }
 
+.accordion span {
+  color: white;
+  font-size: 13px;
+}
+
+.js {
+  cursor: pointer;
+}
+
 .css {
   background-color: white;
   padding: 2px;
+  cursor: pointer;
 }
 
 .ajax {
