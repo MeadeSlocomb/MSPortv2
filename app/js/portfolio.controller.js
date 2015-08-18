@@ -8,6 +8,10 @@
 
     function ($scope, $location) {
 
+      ////////////////////////////////
+      //  Skill icon expansion ///////
+      ////////////////////////////////
+
       $scope.js = false;
       $scope.css = false;
 
@@ -43,7 +47,46 @@
           }
       };
 
-  }
+
+      //////////////////////////////////////
+      //  Show portfolio details on click //
+      //////////////////////////////////////
+
+
+      $scope.selectedProject = {
+        codebytes: false,
+        popquiz: false,
+        fud: false
+      };
+
+      $scope.showDetails = function(project){
+        if ($scope.selectedProject.project === false){
+          return "";
+        } else {
+          return 'showDetails';
+        }
+      };
+
+      $scope.icon = function(project){
+        if ($scope.selectedProject.project === false){
+          return "";
+        } else {
+          return 'fa-rotate-180';
+        }
+      };
+
+      $scope.details = function(project){
+        console.log(project);
+        if ($scope.selectedProject.project === false) {
+          $scope.selectedProject.project = true;
+        } else {
+          $scope.selectedProject.project = false;
+        }
+
+      };
+
+    }
+
 
   ]);
 
