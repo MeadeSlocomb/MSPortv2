@@ -53,36 +53,80 @@
       //////////////////////////////////////
 
 
-      $scope.selectedProject = {
-        codebytes: false,
-        popquiz: false,
-        fud: false
-      };
+      $scope.codebytes = false;
+      $scope.popquiz = false;
+      $scope.fud = false;
 
-      $scope.showDetails = function(project){
-        if ($scope.selectedProject.project === false){
+      $scope.showCBDetails = function(){
+        if ($scope.codebytes === false){
           return "";
         } else {
           return 'showDetails';
         }
       };
 
-      $scope.icon = function(project){
-        if ($scope.selectedProject.project === false){
+      $scope.iconCB = function(){
+        if ($scope.codebytes === false){
           return "";
         } else {
           return 'fa-rotate-180';
         }
       };
 
-      $scope.details = function(project){
-        console.log(project);
-        if ($scope.selectedProject.project === false) {
-          $scope.selectedProject.project = true;
+      $scope.detailsCB = function(){
+        if ($scope.codebytes === false) {
+          $scope.codebytes = true;
         } else {
-          $scope.selectedProject.project = false;
+          $scope.codebytes = false;
         }
+      };
 
+      $scope.showPQDetails = function(){
+        if ($scope.popquiz === false){
+          return "";
+        } else {
+          return 'showDetails';
+        }
+      };
+
+      $scope.iconPQ = function(){
+        if ($scope.popquiz === false){
+          return "";
+        } else {
+          return 'fa-rotate-180';
+        }
+      };
+
+      $scope.detailsPQ = function(){
+        if ($scope.popquiz === false) {
+          $scope.popquiz = true;
+        } else {
+          $scope.popquiz = false;
+        }
+      };
+
+      $scope.showFDetails = function(){
+        if ($scope.fud === false){
+          return "";
+        } else {
+          return 'showDetails';
+        }
+      };
+
+      $scope.iconF = function(){
+        if ($scope.fud === false){
+          return "";
+        } else {
+          return 'fa-rotate-180';
+        }
+      };
+
+      $scope.detailsF = function(){
+        if ($scope.fud === false) {
+          $scope.fud = true;
+        } else {
+          $scope.fud = false;
+        }
       };
 
     }
