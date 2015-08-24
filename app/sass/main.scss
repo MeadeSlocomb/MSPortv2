@@ -355,6 +355,14 @@ body {
   padding-right: 25px;
 }
 
+.pqDesc {
+  margin-bottom: 95px;
+}
+
+.fudDesc {
+  margin-bottom: 62px;
+}
+
 .fa-arrow-circle-o-down {
   font-size: 2em;
   cursor: pointer;
@@ -375,7 +383,7 @@ body {
 }
 
 .showDetails {
-  height: 200px;
+  height: 240px;
   transition: height 1s ease;
 }
 
@@ -443,6 +451,7 @@ body {
   text-decoration: none;
   display: inline-block;
   padding: 0;
+  font-size: 2em;
 }
 
 .contactDiv a i {
